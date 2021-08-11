@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/headerbg">
+
+    <ImageView
+        android:id="@+id/mypicc"
+        android:layout_width="116dp"
+        android:layout_height="122dp"
+        android:paddingTop="50dp"
+        app:srcCompat="@drawable/navimg" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="30dp"
+        android:text="Shashikant Vishwakarma"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="iversions@gmail.com"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

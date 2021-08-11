@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADFFFF8D">
+
+    <LinearLayout
+        android:id="@+id/leolay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ADFFFF8D"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageleo"
+            android:layout_width="match_parent"
+            android:layout_height="534dp"
+            android:layout_margin="4dp"
+            app:srcCompat="@drawable/leoscr" />
+
+        <TextView
+            android:id="@+id/leoDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="You are looking at one of the fastest animal on earth they can reach 58kmph in a very short time. A separate melanistic species of leopard is known as black panther. I knew them as Bagheera, kids these days may know them from Marvel Superhero."
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

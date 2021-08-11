@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_ph"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:autoLink="phone"
+        android:text="0091 98217 98277"
+        android:textColor="@android:color/secondary_text_light"
+        android:textColorLink="@android:color/secondary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_eml"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_ph"
+        app:layout_constraintTop_toBottomOf="@+id/text_ad" />
+
+    <TextView
+        android:id="@+id/text_send"
+        android:layout_width="0dp"
+        android:layout_height="243dp"
+        android:background="@drawable/side_nav_bar"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_eml"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/img_eml"
+        android:autoLink="email"
+        android:text="iversions@gmail.com"
+        android:textColorLink="@android:color/secondary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_lin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_eml"
+        app:layout_constraintTop_toBottomOf="@+id/text_ph" />
+
+    <TextView
+        android:id="@+id/text_ad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/img_ad"
+        android:text="Bldg#G3 Flat 003, New Brahmand Annex, Phase-8, Azad Nagar, Kolshet, Ghodbunder Road, Thane-400607."
+        android:textColor="@android:color/secondary_text_light"
+        android:textColorLink="@android:color/secondary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/text_ph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_ad"
+        app:layout_constraintTop_toBottomOf="@+id/text_send" />
+
+    <TextView
+        android:id="@+id/text_lin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/img_lin"
+        android:autoLink="web"
+        android:text="www.linkedin.com/in/shashi1384"
+        android:textColorLink="@android:color/secondary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/text_xing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_lin"
+        app:layout_constraintTop_toBottomOf="@+id/text_eml" />
+
+    <TextView
+        android:id="@+id/text_fb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/img_fb"
+        android:autoLink="web"
+        android:text="www.facebook.com/shashikant.vishwakarma"
+        android:textColorLink="@android:color/secondary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_fb"
+        app:layout_constraintTop_toBottomOf="@+id/text_xing" />
+
+    <TextView
+        android:id="@+id/text_xing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/img_xing"
+        android:autoLink="web"
+        android:text="www.xing.com/profile/Shashi_TV/cv"
+        android:textColorLink="@android:color/secondary_text_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_fb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_xing"
+        app:layout_constraintTop_toBottomOf="@+id/text_lin" />
+
+    <ImageView
+        android:id="@+id/img_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/img_ph"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/address_icon"
+        app:layout_constraintBottom_toTopOf="@id/img_ph"
+        app:layout_constraintEnd_toStartOf="@id/text_ad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_send" />
+
+    <ImageView
+        android:id="@+id/img_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/facebook_icon"
+        app:layout_constraintEnd_toStartOf="@id/text_fb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_xing" />
+
+    <ImageView
+        android:id="@+id/img_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/linkedin_icon"
+        app:layout_constraintBottom_toTopOf="@id/img_xing"
+        app:layout_constraintEnd_toStartOf="@id/text_lin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_eml" />
+
+    <ImageView
+        android:id="@+id/img_xing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/xing_icon"
+        app:layout_constraintBottom_toTopOf="@id/img_fb"
+        app:layout_constraintEnd_toStartOf="@id/text_xing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_lin" />
+
+    <ImageView
+        android:id="@+id/img_ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/phone_iconnn"
+        app:layout_constraintBottom_toTopOf="@id/img_eml"
+        app:layout_constraintEnd_toStartOf="@+id/text_ph"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_ad" />
+
+    <ImageView
+        android:id="@+id/img_eml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/email_iconn"
+        app:layout_constraintBottom_toTopOf="@id/img_lin"
+        app:layout_constraintEnd_toStartOf="@+id/text_eml"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_ph" />
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="107dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="186dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addressbook_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Experience"
+    android:background="@color/colorPrimaryLight">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/card">
+
+            <TextView
+                android:id="@+id/cohead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="4dp"
+                android:text="Organisation:" />
+
+            <TextView
+                android:id="@+id/deshead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cohead"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="9dp"
+                android:text="Designation:" />
+
+            <TextView
+                android:id="@+id/coname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/cohead"
+                android:text="BSM" />
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coname"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/deshead"
+                android:text="Team Leader" />
+
+            <TextView
+                android:id="@+id/dtfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/des"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/dthead1"
+                android:ems="10"
+                android:text="01/04/2013" />
+
+            <TextView
+                android:id="@+id/dthead1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deshead"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="59dp"
+                android:text="From:" />
+
+            <TextView
+                android:id="@+id/dtto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dtfrom"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/dthead2"
+                android:text="30/10/2018" />
+
+            <TextView
+                android:id="@+id/dthead2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dthead1"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="77dp"
+                android:text="To:" />
+
+            <ImageView
+                android:id="@+id/cologo"
+                android:layout_width="95dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                app:srcCompat="@drawable/zebra" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

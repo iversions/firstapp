@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6A15A">
+
+    <LinearLayout
+        android:id="@+id/tgrlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ADE6A15A"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagetgr"
+            android:layout_width="match_parent"
+            android:layout_height="534dp"
+            android:layout_margin="4dp"
+            app:srcCompat="@drawable/tgrscr" />
+
+        <TextView
+            android:id="@+id/tgrDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="You may know him as son of Mufasa but he is one of the apex solitary predator. If it was reality Mufasa would have ate Bambi and Pumbaa. I'ts best to see them in wild than in zoo there are nine sub species of them."
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
